@@ -11,15 +11,15 @@ releases:
 
   - name: external-secrets
     chart: external-secrets/external-secrets
-    version: 0.5.6
+    version: 0.7.2
     namespace: es
-    needs: [vault]
+    needs: [vault/vault]
     values:
       - installCRDs: true
 
   - name: config
     chart: ./charts/config
-    needs: [external-secrets]
+    needs: [es/external-secrets]
     namespace: default
     version: 0.1.0
 
