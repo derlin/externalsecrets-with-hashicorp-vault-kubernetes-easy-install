@@ -19,3 +19,11 @@ kubectl port-forward -n vault vault-0 8200
 ```
 
 You can now go to http://localhost:8200 and login with the default token `root`.
+
+To access the vault using the commandline (and assuming the port-forwarding is on):
+```bash
+export VAULT_ADDR=http://127.0.0.1:8200
+export VAULT_TOKEN=root
+
+vault kv get secret/foo
+```
