@@ -1,5 +1,7 @@
 # ExternalSecrets + HashiCorp Vault on K3D (easy install)
 
+![logo](social/vault+externasecrets-1600x840.png)
+
 This repo lets you install and set up [HashiCorp Vault](https://www.vaultproject.io)
 and the [ExternalSecrets](https://external-secrets.io/v0.7.2/api/externalsecret/)
 operator on K3D (or another Kubernetes instance) easily.
