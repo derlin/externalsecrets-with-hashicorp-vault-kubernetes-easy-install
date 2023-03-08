@@ -1,0 +1,4 @@
+vaultToken:
+  namespace: default
+  name: vault-token
+  value: root
